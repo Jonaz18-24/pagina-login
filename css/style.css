@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('../imagenes/woman-7030387_1280.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    height: 500px;
+    max-width: 900px;
+    border-radius: 25px;
+    box-shadow: 5px 15px 17px rgba(0,0,0,0.2);
+    transition: all 1s ease;
+    padding: 10px;
+
+}
+.login-information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    opacity:0.75;
+
+}
+.info-childs{
+    width: 100%;
+    padding: 30px;
+
+}
+.info-child h2{
+    font-size: 2.3em;
+
+}
+.info-childs p{
+    font-size: 1.2em;
+    color: black;
+    padding: 10px 0;
+
+}
+.info-childs input{
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #9191bd;
+    cursor:pointer;
+    transition: background-color .3s ease;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: azure;
+}
+.info-childs input:hover{
+    background-color: black;
+    border: none;
+    color: aliceblue;
+}
+/*lado derecho*/
+.registro-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:25px;
+    background-color: azure;
+    opacity: 0.90;
+}
+.registro-information-childs{
+    padding:  0px 30px;
+
+}
+.registro-information-childs h2{
+    font-size: 2.5em;
+    color: black;
+}
+.registro-information p{
+    color: black;
+}
+.icons{
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid #444;
+    margin: 0 15px;
+    color: #1e2122;
+    transition: background-color .3s ease;
+    box-shadow:  5px 15px 17px rgb(0,0,0,01.2em);
+
+
+}
+.icons i:hover{
+    background-color: aqua;
+    color: antiquewhite;
+}
+form{
+    margin: 30px 0 0 0;
+
+}
+form label input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    background-color: azure;
+    border-radius: 10px;
+}
+form label:hover{
+    border: 4px solid #aaa;
+}
+form input[type="submit"]:hover{
+    background-color: darkgray;
+    border: 2px solid #444;
+    color: azure;
+}
+.hide{
+    /*display*/
+    position: absolute;
+    transform: translateY(-160px);
+
+
+}
+@media(max-width:800px){
+    header{
+        display: none;
+    }
+}
